@@ -1,0 +1,14 @@
+/*Estilos generales*/
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5% /*Ahora 1rem equivale a 10px */
+}
+
+body{
+    font-size: normal 16px "Open Sans";
+}
