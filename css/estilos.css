@@ -1,4 +1,23 @@
-/*Estilos generales*/
+/*
+    COLORES GLOBALES
+*/
+:root{
+    --fondoMenuFooter: #232A34;
+    --fondoBotones: #F4AD24;
+    --fondoBarMenu: #505865;
+    --colorTitulos: #333C4E;
+    -colorSubtitulos: #F2F2F2;
+    --colorCuerpo: #7e8890;
+    --blanco: #fff;
+    --negro: #000;
+    -secciones : #1C212A;
+    --letraTitulo: "Montserrat", Arial, Sans-serif;
+    --letraSubtitulo: "Lato", Arial, Sans-serif;
+    --letraCuerpo: "Open Sans", Arial, Sans-serif;
+}
+/*
+    ESTILOS GENERALES
+*/
 *,
 *:before,
 *:after{
@@ -6,9 +25,37 @@
 }
 
 html{
-    font-size: 62.5% /*Ahora 1rem equivale a 10px */
+    box-sizing: border-box;
+    font-size: 62.5% /*Ahora 1rem equivale a 10px */    
 }
 
 body{
-    font: normal 18px "Open Sans";
+    font: normal 16px "Open Sans", Arial, Sans-serif;
+}
+
+/*
+    MENU LATERAL FIJO, MODELO RESPONSIVE
+*/
+.menu-lateral{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--fondoMenuFooter);
+    height: 94px;
+    color: var(--blanco);
+    padding: 0 3rem;
+}
+.menu-lateral .logo{
+    width: 60%;
+}
+.menu-lateral .logo p{
+    font-size: 1.5rem;
+}
+.menu-lateral .logo p span{
+    font-size: 2rem;
+}
+.menu-lateral .bar-menu{
+    color: var(--fondoBarMenu);
+    font-size: 2.1rem;
+    cursor: pointer;
 }
