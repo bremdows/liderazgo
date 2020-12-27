@@ -6,11 +6,11 @@
     --fondoBotones: #F4AD24;
     --fondoBarMenu: #505865;
     --colorTitulos: #333C4E;
-    -colorSubtitulos: #F2F2F2;
+    --colorSubtitulos: #F2F2F2;
     --colorCuerpo: #7e8890;
     --blanco: #fff;
     --negro: #000;
-    -secciones : #1C212A;
+    --secciones : #1C212A;
     --letraTitulo: "Montserrat", Arial, Sans-serif;
     --letraSubtitulo: "Lato", Arial, Sans-serif;
     --letraCuerpo: "Open Sans", Arial, Sans-serif;
@@ -37,10 +37,23 @@ body{
 */
 a{
     text-decoration: none;
+    color: var(--blanco)
 }
 ul{
     list-style:none;
     padding: 0;
+}
+
+.boton{
+    background: var(--fondoBotones);
+    padding: .9rem 2rem;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: var(--letraTitulo);
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 14px;
 }
 /*
     MENU LATERAL FIJO, MODELO RESPONSIVE
@@ -177,6 +190,7 @@ section{
     }
 }
 
+
 /*
     PORTADA 
 */
@@ -184,4 +198,40 @@ main.portada{
     margin-top: 94px;
     height: 100vh;
     background: url(../media/portada.jpg) 54% center;
+    background: linear-gradient(to right, rgba(0,0,0,.6), rgba(255,255,255,.4)), url(../media/portada.jpg) 54% center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.portada .titulo-portada{
+    width: 80%;
+    font-family: var(--letraTitulo);
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+main.portada .titulo-portada h1{
+    font-size: 2.713rem;
+    line-height: 2.8rem;
+    margin-bottom: 2.8rem;
+}
+main.portada .titulo-portada  p{
+    font-weight: 700;
+    margin-bottom: 5.6rem;
+}
+main.portada .titulo-portada a i{
+    font-size: 1.6rem;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 800px){
+    main.portada{
+        margin-top: 0;
+        margin-left: 215px;
+    }
+    main.portada .titulo-portada h1{
+        width: 75%;
+        font-size: 6.193rem;
+        line-height: normal;
+    }
 }
