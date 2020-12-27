@@ -14,6 +14,7 @@
     --letraTitulo: "Montserrat", Arial, Sans-serif;
     --letraSubtitulo: "Lato", Arial, Sans-serif;
     --letraCuerpo: "Open Sans", Arial, Sans-serif;
+    --letraIntroduccion: "Merriweather", "Times News Roman", serif;
 }
 /*
     ESTILOS GLOBALES
@@ -43,7 +44,11 @@ ul{
     list-style:none;
     padding: 0;
 }
-
+img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
 .boton{
     background: var(--fondoBotones);
     padding: .9rem 2rem;
@@ -54,6 +59,7 @@ ul{
     font-weight: 700;
     letter-spacing: 2px;
     line-height: 14px;
+    display: inline-block;
 }
 /*
     MENU LATERAL FIJO, MODELO RESPONSIVE
@@ -103,7 +109,6 @@ ul{
     .menu-lateral .bar-menu{
         display: none;
     }
-    
 }
 
 /* 
@@ -225,13 +230,77 @@ main.portada .titulo-portada a i{
 }
 
 @media only screen and (min-width: 800px){
-    main.portada{
+    main.portada,
+    .content-fixed{
         margin-top: 0;
         margin-left: 215px;
     }
     main.portada .titulo-portada h1{
         width: 75%;
-        font-size: 6.193rem;
         line-height: normal;
+    }
+}
+@media only screen and (min-width: 1024px){
+    main.portada .titulo-portada h1{
+        font-size: 5.193rem;
+    }
+}
+/*
+    SOBRE MÍ
+*/
+.sobre-mi{    
+    font-family: var(--letraTitulo);
+}
+.sobre-mi article{
+    padding: 11.5rem 4.2rem;
+}
+.sobre-mi figure{
+    margin:0;
+}
+.sobre-mi figure img{
+    height: 400px;
+    object-fit: cover;
+    object-position: top right;
+}
+.sobre-mi article h2{
+    /* font-family: var(--letraTitulo); */
+    color: var(--colorSubtitulos);
+    font-size: 3.86198rem;
+}
+.sobre-mi article h3 {
+    color: var(--colorTitulos);
+    text-transform: uppercase;
+    font-size: 2.498rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.sobre-mi article p{
+    color: var(--colorCuerpo);
+    line-height: 3.7rem;
+}
+.sobre-mi article .contenido .introduccion{
+    font-family: var(--letraIntroduccion);
+}
+.sobre-mi article .contenido .introduccion + p{
+    font-size: 1.5rem;
+}
+.sobre-mi article footer .boton{
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+}
+
+@media only screen and (min-width: 1025px){
+    .sobre-mi{
+        display: flex;
+    }
+    .sobre-mi article{
+        width: 72.41%;
+    }
+    .sobre-mi figure{
+        width: 50%;
+    }
+    .sobre-mi figure img{
+        height: 100%;
+        max-height: 1486px;
     }
 }
