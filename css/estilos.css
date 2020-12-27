@@ -176,3 +176,12 @@ section{
         background: transparent;
     }
 }
+
+/*
+    PORTADA 
+*/
+main.portada{
+    margin-top: 94px;
+    height: 100vh;
+    background: url(../media/portada.jpg) 54% center;
+}
