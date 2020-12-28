@@ -144,10 +144,6 @@ img{
     padding: 0 1.2rem 0 3rem;
     height: 50px;
 }
-section{
-    height: 200vh;
-}
-
 @media only screen and (min-width: 800px){
     .menu-lateral .items-menu{
         transform: scaleY(1);
@@ -245,35 +241,46 @@ main.portada .titulo-portada a i{
         font-size: 5.193rem;
     }
 }
+
 /*
-    SOBRE MÍ
+    ESTILOS GENERALES CUERPO
 */
-.sobre-mi{    
+.generico{
     font-family: var(--letraTitulo);
 }
-.sobre-mi article{
-    padding: 11.5rem 4.2rem;
-}
-.sobre-mi figure{
-    margin:0;
-}
-.sobre-mi figure img{
-    height: 400px;
-    object-fit: cover;
-    object-position: top right;
-}
-.sobre-mi article h2{
-    /* font-family: var(--letraTitulo); */
+.generico article h2{
     color: var(--colorSubtitulos);
     font-size: 3.86198rem;
 }
-.sobre-mi article h3 {
+.generico article h3 {
     color: var(--colorTitulos);
     text-transform: uppercase;
     font-size: 2.498rem;
     letter-spacing: 2px;
     font-weight: 700;
 }
+.generico article{
+    padding: 11.5rem 4.2rem;
+}
+.generico figure img{
+    height: 400px;
+    object-fit: cover;
+    object-position: top right;
+}
+.generico figure{
+    margin:0;
+}
+.generico article footer .boton{
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+}
+/*
+    SOBRE MÍ
+*/
+.sobre-mi{    
+    
+}
+
 .sobre-mi article p{
     color: var(--colorCuerpo);
     line-height: 3.7rem;
@@ -284,23 +291,45 @@ main.portada .titulo-portada a i{
 .sobre-mi article .contenido .introduccion + p{
     font-size: 1.5rem;
 }
-.sobre-mi article footer .boton{
-    margin-top: 2rem;
-    padding: 1.5rem 2rem;
-}
-
 @media only screen and (min-width: 1025px){
-    .sobre-mi{
+    .generico{
         display: flex;
     }
-    .sobre-mi article{
-        width: 72.41%;
+    .generico article{
+        width: 60%;
     }
-    .sobre-mi figure{
-        width: 50%;
+    .generico figure{
+        width: 40%;
     }
-    .sobre-mi figure img{
+    .generico figure img{
         height: 100%;
-        max-height: 1300px;
+    }
+    .generico article h2{
+        font-size: 8rem;
+        margin-top: 0;
+    }
+    .generico article h3 {
+        font-size: 3.6rem;
     }
 }
+/*
+    SECCIÓN TRABAJOS INDIVIDUALES
+*/
+
+.trabajos-individuales .contenido{
+    display: flex;
+    flex-wrap: wrap;
+}
+.trabajos-individuales .contenido .tarea{
+    width: 100%;
+    height: 300px;
+    background: var(--colorCuerpo);
+    margin-bottom: 1.5rem;
+    display: grid;
+    align-items: end;
+    text-transform: uppercase;
+    font-family: var(--letraSubtitulo);
+    font-size: 2.1rem;
+    padding: 2rem;
+}
+    
