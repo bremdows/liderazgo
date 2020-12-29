@@ -333,3 +333,17 @@ main.portada .titulo-portada a i{
     padding: 2rem;
 }
     
+
+
+/*
+    MOSTRAR TAREAS
+*/
+
+.mostrar-tareas{
+    position: fixed;
+    width: calc(100vw - 215px);
+    height: 100%;
+    background:rgba(0,0,0,.5);
+    top: 0;
+    left: 215px;
+}
