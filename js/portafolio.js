@@ -17,4 +17,29 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     });
 
+    mostrarTarea();
 });
+
+function mostrarTarea(){
+
+    let cerrar = document.querySelector(".cerrar-tarea"),
+        tareas = document.querySelectorAll('.tarea a')
+        contenedor = document.getElementById('marco-tarea')
+
+    cerrar.addEventListener('click', () =>{
+        console.log('Tarea Cerrada');
+    })
+
+    // Agregando eventos a todos los elementos HTML con la clase .tarea
+    console.log(tareas);
+
+    tareas.forEach( (tarea, index) => {
+        tarea.addEventListener('click', ()=> {
+
+            enlace = tarea.getAttribute('data-enlace')
+
+        })
+    })
+
+}
+
