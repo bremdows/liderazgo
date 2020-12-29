@@ -25,21 +25,25 @@ function mostrarTarea(){
     let cerrar = document.querySelector(".cerrar-tarea"),
         tareas = document.querySelectorAll('.tarea a')
         contenedor = document.getElementById('marco-tarea')
+        mostrarTareas = document.querySelector('.mostrar-tareas')
 
     cerrar.addEventListener('click', () =>{
-        console.log('Tarea Cerrada');
+        mostrarTareas.classList.remove('active')
     })
 
     // Agregando eventos a todos los elementos HTML con la clase .tarea
     console.log(tareas);
 
     tareas.forEach( (tarea, index) => {
-        tarea.addEventListener('click', ()=> {
-
+        
+        tarea.addEventListener('click', (e)=> {
+            e.preventDefault();
             enlace = tarea.getAttribute('data-enlace')
-
+            contenedor.setAttribute('src', enlace)
+            mostrarTareas.classList.add('active')
         })
     })
+
 
 }
 
