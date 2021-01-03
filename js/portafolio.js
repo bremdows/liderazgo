@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
 
     mostrarTarea();
+
+    document.getElementById('btnCookie').addEventListener('click', () => {
+        document.cookie = 'user=Davis'
+        alert(document.cookie)
+    })
 });
 
 function mostrarTarea(){
@@ -44,6 +49,11 @@ function mostrarTarea(){
         })
     })
 }
+
+(()=>{
+    document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None; Secure";
+    alert( document.cookie );
+})()
 
 /*
     SIN NINGUN COMENTARIO QUE AGREGAR POR EL MOMENTO
