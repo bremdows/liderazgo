@@ -364,6 +364,7 @@ main.portada .titulo-portada a i{
     left: 0;
     transform: scale(0);
     transition: transform .2s ease-in-out;
+    display: none;
 }
 @media only screen and (min-width: 800px){
     .mostrar-tareas{
@@ -383,4 +384,5 @@ main.portada .titulo-portada a i{
 }
 .mostrar-tareas.active{
     transform: scale(1);
+    display:block;
 }
