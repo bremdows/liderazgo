@@ -50,11 +50,6 @@ function mostrarTarea(){
     })
 }
 
-(()=>{
-    document.cookie = "__cf_bm=55966cf4f31cc7caedf7bd4153fafd5fedd46ff4-1609655616-1800-AQOyq0N1EuZsuuUylr9Laxy348ReUx6ncaC0cBTFZEcSBrQg6eSCO9f6AkdqWTLJvRWK84sMAc3nR2AEmeY4a/Q=;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None; Secure";
-    alert( document.cookie );
-})()
-
 /*
     SIN NINGUN COMENTARIO QUE AGREGAR POR EL MOMENTO
 */
