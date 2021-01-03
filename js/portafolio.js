@@ -43,7 +43,9 @@ function mostrarTarea(){
             mostrarTareas.classList.add('active')
         })
     })
-
-
 }
+
+/*
+    SIN NINGUN COMENTARIO QUE AGREGAR POR EL MOMENTO
+*/
 
