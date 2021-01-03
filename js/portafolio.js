@@ -18,11 +18,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
 
     mostrarTarea();
-
-    document.getElementById('btnCookie').addEventListener('click', () => {
-        document.cookie = 'user=Davis'
-        alert(document.cookie)
-    })
 });
 
 function mostrarTarea(){

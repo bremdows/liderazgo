@@ -362,8 +362,6 @@ main.portada .titulo-portada a i{
     background:rgba(0,0,0,.5);
     top: 0;
     left: 0;
-    transform: scale(0);
-    transition: transform .2s ease-in-out;
     display: none;
 }
 @media only screen and (min-width: 800px){
@@ -383,6 +381,5 @@ main.portada .titulo-portada a i{
     font-size: 3.2rem;
 }
 .mostrar-tareas.active{
-    transform: scale(1);
     display:block;
 }
