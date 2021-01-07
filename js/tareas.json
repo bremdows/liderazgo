@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "nombre 1",
+        "enlace": "www.algo.com",
+        "tipoArchivo": "jpg, png, pdf, iframe",
+        "fechaCreación": "Fecha Mes Año"
+    },
+    {
+        "nombre": "nombre 2",
+        "enlace": "www.algo2.com",
+        "tipoArchivo": "jpg, png, pdf, iframe",
+        "fechaCreación": "Fecha Mes Año"
+    },
+    {
+        "nombre": "nombre 3",
+        "enlace": "www.algo3.com",
+        "tipoArchivo": "jpg, png, pdf, iframe",
+        "fechaCreación": "Fecha Mes Año"
+    }
+]
