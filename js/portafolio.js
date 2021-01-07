@@ -17,7 +17,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     });
 
-    mostrarTarea();
+    obtenerDatosJSON()
+
+    mostrarTarea()
+    
 });
 
 function mostrarTarea(){
@@ -47,7 +50,34 @@ function mostrarTarea(){
 
 // GENERAR EL HTML DE LA SECCIÓN DE TAREAS CON JAVASCRIPT MEDIANTE UN ARCHIVO JSON
 
+function obtenerDatosJSON(){
+    
+    const url = 'https://bremdows.github.io/liderazgo/js/tareas.json';
 
-   
+    // consultar los datos 
+    /*
+        La función fetch nos retorna una promesa
+    */
+    fetch(url)
+        .then(respuesta => respuesta.json() )
+        .then(datos => generarHTML(datos) )
+        .catch(error => {
+            console.log(error)
+        })
+}
+
+
+function generarHTML(datos){
+    
+    let html = ''
+    
+    datos.forEach(tarea => {
+        
+        const {nombre, enlace, tipoArchivo, fechaCreacion} = tarea
+
+        
+    })
+}
+
 
 

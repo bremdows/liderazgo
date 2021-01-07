@@ -1,20 +1,20 @@
 [
     {
-        "nombre": "nombre 1",
-        "enlace": "www.algo.com",
-        "tipoArchivo": "jpg, png, pdf, iframe",
-        "fechaCreación": "Fecha Mes Año"
+        "nombre": "cosas que me suman y restan",
+        "enlace": "https://www.canva.com/design/DAESkQjB3Uo/view?embed",
+        "tipoArchivo": "iframe",
+        "fechaCreacion": "07/01/2020"
     },
     {
-        "nombre": "nombre 2",
-        "enlace": "www.algo2.com",
-        "tipoArchivo": "jpg, png, pdf, iframe",
-        "fechaCreación": "Fecha Mes Año"
+        "nombre": "carta del futuro",
+        "enlace": "https://www.canva.com/design/DAESkH4ny5Q/view?embed",
+        "tipoArchivo": "iframe",
+        "fechaCreacion": "07/01/2020"
     },
     {
-        "nombre": "nombre 3",
-        "enlace": "www.algo3.com",
-        "tipoArchivo": "jpg, png, pdf, iframe",
-        "fechaCreación": "Fecha Mes Año"
+        "nombre": "esquema inteligencia emocional",
+        "enlace": "aun no definido",
+        "tipoArchivo": "jpg",
+        "fechaCreacion": "28/12/2020"
     }
 ]
