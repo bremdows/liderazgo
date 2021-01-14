@@ -88,6 +88,7 @@ function generarHTML(datos){
         html += `
             <div class="tarea">
                 <a href="#" data-enlace="${enlace}"> ${nombre} </a>
+                <time> ${fechaCreacion} </time>
             </div>
         `
     })

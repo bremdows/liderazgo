@@ -49,6 +49,10 @@ img{
     display: block;
     height: auto;
 }
+time{
+    font-size: 1.6rem;
+    font-family: var(--letraTitulo);
+}
 .boton{
     background: var(--fondoBotones);
     padding: .9rem 2rem;
@@ -316,7 +320,9 @@ main.portada .titulo-portada a i{
 /*
     SECCIÓN TRABAJOS INDIVIDUALES
 */
-
+.trabajos-individuales{
+    background:var(--colorSubtitulos);
+}
 .trabajos-individuales .contenido{
     display: grid;
     grid-template-columns: 1fr;
@@ -335,6 +341,9 @@ main.portada .titulo-portada a i{
 }
 .trabajos-individuales figure{
     display: none;
+}
+.trabajos-individuales article h2{
+    color: var(--blanco)
 }
 @media only screen and (min-width: 768px){
     .trabajos-individuales .contenido{
