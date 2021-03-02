@@ -1,5 +1,29 @@
 [
     {
+        "nombre": "Problematica Social",
+        "enlace": "https://docs.google.com/presentation/d/e/2PACX-1vQXq-zngctekHGoymO59-prDb_Uyo6DBVbsgIPocWK6fJ0xv7AWB3KMjP-L8-YgOaeqDXFtafZsYRZ9/embed?start=false&loop=false&delayms=3000",
+        "tipoArchivo": "iframe",
+        "fechaCreacion": "23/02/2021"
+    },
+    {
+        "nombre": "Proyecto de Vida",
+        "enlace": "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-gt1HdTcIPgtENEsFg-p6kHVpt6aHDD4rcFcyZ0ljAg1eNZJ5ncREsm4oQDnsKoPwIZKlPOqvj8al/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false",
+        "tipoArchivo": "iframe",
+        "fechaCreacion": "18/02/2021"
+    },
+    {
+        "nombre":"Marketing Personal",
+        "enlace": "https://www.canva.com/design/DAEVMfOBpes/view?embed",
+        "tipoArchivo": "iframe",
+        "fechaCreacion": "11/02/2021"
+    },
+    {
+        "nombre":"Trabajo en Equipo",
+        "enlace": "https://docs.google.com/presentation/d/e/2PACX-1vTOPLCcGU7HfQhPDYPlBv5mggJ-iWYx-NZAQ7f3_JbUoANIc_pgptRFgcd6RWjps60n2KV1SV8vOrDV/embed?start=false&loop=false&delayms=3000",
+        "tipoArchivo":"iframe",
+        "fechaCreacion": "28/01/2021"
+    },
+    {
         "nombre": "Tipos de liderazgo según Kurt Lewin",
         "enlace": "https://www.canva.com/design/DAET4H552Os/view?embed",
         "tipoArchivo": "iframe",
